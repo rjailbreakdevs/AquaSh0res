@@ -1,27 +1,23 @@
 {
   "images" : [
     {
-      "size" : "16x16",
       "idiom" : "mac",
-      "filename" : "jb.jpg",
+      "size" : "16x16",
       "scale" : "1x"
     },
     {
-      "size" : "16x16",
       "idiom" : "mac",
-      "filename" : "jb-1.jpg",
+      "size" : "16x16",
       "scale" : "2x"
     },
     {
-      "size" : "32x32",
       "idiom" : "mac",
-      "filename" : "jb-2.jpg",
+      "size" : "32x32",
       "scale" : "1x"
     },
     {
-      "size" : "32x32",
       "idiom" : "mac",
-      "filename" : "jb-3.jpg",
+      "size" : "32x32",
       "scale" : "2x"
     },
     {
