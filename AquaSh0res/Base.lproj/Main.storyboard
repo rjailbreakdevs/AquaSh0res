@@ -728,6 +728,9 @@
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
+                                <connections>
+                                    <segue destination="rW6-LT-cH4" kind="sheet" id="hwY-xt-W10"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
@@ -738,6 +741,14 @@
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="235.5" y="1028"/>
+        </scene>
+        <!--JBCatView-->
+        <scene sceneID="3ot-1l-Zv4">
+            <objects>
+                <controllerPlaceholder storyboardName="JBCatView" id="rW6-LT-cH4" sceneMemberID="viewController"/>
+                <customObject id="65L-qq-jgS" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="209" y="1468"/>
         </scene>
     </scenes>
     <resources>
