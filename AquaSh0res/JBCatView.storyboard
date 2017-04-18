@@ -1,7 +1,80 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12118"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="OFa-nA-2S3">
+            <objects>
+                <windowController id="CPh-oR-wgx" sceneMemberID="viewController">
+                    <window key="window" title="Jailbreaks" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="Jcd-6A-IEJ">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="294" y="313" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+                    </window>
+                    <connections>
+                        <segue destination="GOv-Br-a88" kind="relationship" relationship="window.shadowedContentViewController" id="uup-eN-5gv"/>
+                    </connections>
+                </windowController>
+                <customObject id="rXc-Jx-ynp" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-240" y="12"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="os3-s9-XIz">
+            <objects>
+                <viewController id="GOv-Br-a88" sceneMemberID="viewController">
+                    <view key="view" id="y2q-CH-tIT">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a0F-7t-lKv">
+                                <rect key="frame" x="0.0" y="192" width="72" height="78"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="RedSn0w Reborn" id="5sT-Ty-YW9"/>
+                                <connections>
+                                    <segue destination="b1W-ww-GGy" kind="sheet" id="oCf-iW-J0b"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                    </view>
+                </viewController>
+                <customObject id="Cmq-Nm-Ej0" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="467" y="-13"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QHB-EF-Jbo">
+            <objects>
+                <viewController id="b1W-ww-GGy" sceneMemberID="viewController">
+                    <view key="view" id="Jzo-GF-Adb">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="g1U-Zs-BNf" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="708" y="320"/>
+        </scene>
+        <!--Page Controller-->
+        <scene sceneID="tcI-Bo-EY7">
+            <objects>
+                <pagecontroller transitionStyle="horizontalStrip" id="CCi-bz-ZRm" sceneMemberID="viewController">
+                    <view key="view" id="DWH-J2-bgk">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </pagecontroller>
+                <customObject id="nDf-PI-B0v" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="178" y="400"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="RedSn0w Reborn" width="280" height="280"/>
+    </resources>
 </document>
