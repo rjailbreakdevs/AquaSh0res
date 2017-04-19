@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="CPh-oR-wgx">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12118"/>
@@ -9,7 +9,7 @@
         <!--Window Controller-->
         <scene sceneID="OFa-nA-2S3">
             <objects>
-                <windowController id="CPh-oR-wgx" sceneMemberID="viewController">
+                <windowController showSeguePresentationStyle="single" id="CPh-oR-wgx" sceneMemberID="viewController">
                     <window key="window" title="Jailbreaks" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="Jcd-6A-IEJ">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -54,6 +54,13 @@
                     <view key="view" id="Jzo-GF-Adb">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dna-wi-ofv">
+                                <rect key="frame" x="244" y="173" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" imageScaling="proportionallyDown" image="NSComputer" id="6WU-9c-trO"/>
+                            </imageView>
+                        </subviews>
                     </view>
                 </viewController>
                 <customObject id="g1U-Zs-BNf" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -75,6 +82,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="NSComputer" width="32" height="32"/>
         <image name="RedSn0w Reborn" width="280" height="280"/>
     </resources>
 </document>
